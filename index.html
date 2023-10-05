@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <title>LeWord</title>
+</head>
+
+<body>
+  <header>
+    <h1>LeWord</h1>
+    <div id="menu">
+      <div class="menu-item">
+        <a href="pages/help.html">
+          <img class="icon" src="./assets/help-icon.png" alt="help icon">
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="pages/stats.html">
+          <img class="icon" src="./assets/stats-icon.png" alt="stats icon">
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="pages/settings.html">
+          <img class="icon" src="./assets/gear-icon.png" alt="settings icon">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="w1" class="word">
+      <div id="w1l1" class="letter"></div>
+      <div id="w1l2" class="letter"></div>
+      <div id="w1l3" class="letter"></div>
+      <div id="w1l4" class="letter"></div>
+      <div id="w1l5" class="letter"></div>
+    </div>
+    <div id="w2" class="word">
+      <div id="w2l1" class="letter"></div>
+      <div id="w2l2" class="letter"></div>
+      <div id="w2l3" class="letter"></div>
+      <div id="w2l4" class="letter"></div>
+      <div id="w2l5" class="letter"></div>
+    </div>
+    <div id="w3" class="word">
+      <div id="w3l1" class="letter"></div>
+      <div id="w3l2" class="letter"></div>
+      <div id="w3l3" class="letter"></div>
+      <div id="w3l4" class="letter"></div>
+      <div id="w3l5" class="letter"></div>
+    </div>
+    <div id="w4" class="word">
+      <div id="w4l1" class="letter"></div>
+      <div id="w4l2" class="letter"></div>
+      <div id="w4l3" class="letter"></div>
+      <div id="w4l4" class="letter"></div>
+      <div id="w4l5" class="letter"></div>
+    </div>
+    <div id="w5" class="word">
+      <div id="w5l1" class="letter"></div>
+      <div id="w5l2" class="letter"></div>
+      <div id="w5l3" class="letter"></div>
+      <div id="w5l4" class="letter"></div>
+      <div id="w5l5" class="letter"></div>
+    </div>
+    <div id="w6" class="word">
+      <div id="w6l1" class="letter"></div>
+      <div id="w6l2" class="letter"></div>
+      <div id="w6l3" class="letter"></div>
+      <div id="w6l4" class="letter"></div>
+      <div id="w6l5" class="letter"></div>
+    </div>
+  </main>
+  <section id="keyboard">
+    <div class="row">
+      <div class="key" data-char="A" onclick="getLetter(this)">A</div>
+      <div class="key" data-char="Z" onclick="getLetter(this)">Z</div>
+      <div class="key" data-char="E" onclick="getLetter(this)">E</div>
+      <div class="key" data-char="R" onclick="getLetter(this)">R</div>
+      <div class="key" data-char="T" onclick="getLetter(this)">T</div>
+      <div class="key" data-char="Y" onclick="getLetter(this)">Y</div>
+      <div class="key" data-char="U" onclick="getLetter(this)">U</div>
+      <div class="key" data-char="I" onclick="getLetter(this)">I</div>
+      <div class="key" data-char="O" onclick="getLetter(this)">O</div>
+      <div class="key" data-char="P" onclick="getLetter(this)">P</div>
+    </div>
+    <div class="row">
+      <div class="key" data-char="Q">Q</div>
+      <div class="key" data-char="S">S</div>
+      <div class="key" data-char="D">D</div>
+      <div class="key" data-char="F">F</div>
+      <div class="key" data-char="G">G</div>
+      <div class="key" data-char="H">H</div>
+      <div class="key" data-char="J">J</div>
+      <div class="key" data-char="K">K</div>
+      <div class="key" data-char="L">L</div>
+    </div>
+    <div class="row">
+      <div class="key wide" data-char="ENT">ENT</div>
+      <div class="key" data-char="M">M</div>
+      <div class="key" data-char="W">W</div>
+      <div class="key" data-char="X">X</div>
+      <div class="key" data-char="C">C</div>
+      <div class="key" data-char="V">V</div>
+      <div class="key" data-char="B">B</div>
+      <div class="key" data-char="N">N</div>
+      <div class="key wide" data-char="DEL">DEL</div>
+    </div>
+  </section>
+  <script>
+    // register which letter was clicked, display in console 
+    function getLetter(e) {
+      let letter = e.getAttribute('data-char');
+      console.log(letter)
+    }
+  </script>
+</body>
+
+</html>
